@@ -1,0 +1,70 @@
+ul > li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.demo-logo > h2 > a{
+  background: url(https://github.com/yan-tingciou/goldeggphone/blob/main/images/3.png?raw=true) no-repeat ;
+  width: 97px;
+  height: 100px;
+  display: inline-block;
+  text-indent: 105%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 45px 0 0 ;
+  /* margin-top: 40px;  */
+}
+
+.link {
+	display: block;
+	color: rgba(0, 0, 0, 0.6);
+  padding: 0 20px;
+  margin: 0 5px;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s;
+}
+.link:hover{
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 3px solid #FFD1A4;
+}
+.link.active{
+  color: #FFD1A4;
+  font-weight: bold;
+  border-bottom: 3px solid #FFD1A4;
+}
+
+.icon_fb:hover, .icon_line:hover{
+  opacity: 60%;
+}
+.swiper {
+  max-width: 1100px;
+  position: relative;
+}
+.swiper-wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.swiper-slide{
+  display: flex;
+}
+.swiper-slide img{
+  opacity: 40%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  aspect-ratio: 5/2;
+}
+.swiper h2{
+  position: absolute;
+  bottom: 70px;
+  display: block;
+  width: 100%;
+  background: rgba(213, 158, 111, .5);
+  padding: 20px;
+  z-index: 2;
+  font-size: 30px;
+  line-height: 1.5;
+}
