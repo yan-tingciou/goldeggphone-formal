@@ -360,6 +360,7 @@ const Price = () => {
             sorter: (a, b) => a.glass - b.glass,
             sortOrder: sortedInfo.columnKey === 'glass' ? sortedInfo.order : null,
             ellipsis: true,
+            width: '90px',
         },
         {
             title: '螢幕總成',
@@ -368,6 +369,7 @@ const Price = () => {
             sorter: (a, b) => a.screen - b.screen,
             sortOrder: sortedInfo.columnKey === 'screen' ? sortedInfo.order : null,
             ellipsis: true,
+            width: '90px',
         },
         {
             title: '認證電池',
@@ -376,12 +378,14 @@ const Price = () => {
             sorter: (a, b) => a.certifiedBattery - b.certifiedBattery,
             sortOrder: sortedInfo.columnKey === 'certifiedBattery' ? sortedInfo.order : null,
             ellipsis: true,
+            width: '90px',
         },
         {
             title: '前/後鏡頭',
             dataIndex: 'lens',
             key: 'lens',
             ellipsis: true,
+            width: '100px',
         },
         {
             title: 'Face ID',
@@ -390,6 +394,7 @@ const Price = () => {
             sorter: (a, b) => a.faceID - b.faceID,
             sortOrder: sortedInfo.columnKey === 'faceID' ? sortedInfo.order : null,
             ellipsis: true,
+            width: '90px',
         },
         {
             title: '聽筒/震動/響鈴',
@@ -398,14 +403,14 @@ const Price = () => {
             sorter: (a, b) => a.handset - b.handset,
             sortOrder: sortedInfo.columnKey === 'handset' ? sortedInfo.order : null,
             ellipsis: true,
-            width: '140px',
+            width: '120px',
         },
             {
             title: '容量擴充',
             dataIndex: 'expansion',
             key: 'expansion',
             ellipsis: true,
-            width: '200px',
+            width: '180px',
         },
         {
             title: '開機鍵/音量鍵',
@@ -432,7 +437,7 @@ const Price = () => {
             sorter: (a, b) => a.boardTrial - b.boardTrial,
             sortOrder: sortedInfo.columnKey === 'boardTrial' ? sortedInfo.order : null,
             ellipsis: true,
-            width: '150px',
+            width: '160px',
         },
         {
             title: '背蓋/後殼總成',
@@ -441,7 +446,7 @@ const Price = () => {
             // sorter: (a, b) => a.backCover - b.backCover,
             // sortOrder: sortedInfo.columnKey === 'backCover' ? sortedInfo.order : null,
             ellipsis: true,
-            width: '120px',
+            width: '110px',
         },
     ];
     
@@ -467,7 +472,7 @@ const Price = () => {
         >
             <Table columns={iphoneColumns} dataSource={iphoneData} onChange={handleChange} pagination={false} size='small'
                 scroll={{
-                    x: 1600,
+                    x: 1500,
                 }}
                 summary={() => (
                     <Table.Summary >

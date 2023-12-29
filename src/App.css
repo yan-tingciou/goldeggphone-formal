@@ -17,7 +17,7 @@ ul > li{
 
 .link {
 	display: block;
-	color: rgba(0, 0, 0, 0.6);
+	color: #fff;
   padding: 0 20px;
   margin: 0 5px;
   position: relative;
@@ -26,13 +26,14 @@ ul > li{
   transition: border-bottom 0.3s;
 }
 .link:hover{
-  color: rgba(0, 0, 0, 1);
-  border-bottom: 3px solid #FFD1A4;
+  transition: all 0.5s;
+  color: #ff8c00;
+  /* border-bottom: 5px solid #FFD1A4; */
 }
 .link.active{
-  color: #FFD1A4;
+  color: #ff8c00;
   font-weight: bold;
-  border-bottom: 3px solid #FFD1A4;
+  border-bottom: 4px solid #ff8c00;
 }
 
 .icon_fb:hover, .icon_line:hover{

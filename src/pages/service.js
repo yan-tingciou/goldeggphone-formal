@@ -19,7 +19,7 @@ const Service = () => {
                 background: '#fff'
             }}
         >
-            service
+            coming soon...
         </div>
     </Content>
     </>)

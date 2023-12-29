@@ -7,9 +7,8 @@ import { PrimaryColor, SecondaryColor } from './MainStyle';
 import Price from './pages/price';
 import Service from './pages/service';
 import About from './pages/about';
+import Swiper from './component/swiper';
 
-// import Swiper from 'swiper';
-// import 'swiper';
 import '@fortawesome/fontawesome-free/css/all.css';
 
 import { Layout, Menu, ConfigProvider, FloatButton } from "antd";
@@ -24,7 +23,7 @@ const Root = () => {
     display: 'flex',
     fontSize: '16px',
     // marginRight: '60px',
-    background: '#fff',
+    // background: '#fff',
     padding: '0px',
   };
 
@@ -95,7 +94,7 @@ const Root = () => {
           }}
         >
           <div className="demo-logo">
-            <h2><a href="#"></a></h2>
+            <h2><Link to="/"></Link></h2>
           </div>
           <ul style={ulStyle}>
             <li>
@@ -129,27 +128,14 @@ const Root = () => {
                 background: '#fff',
               }}
             >
-              {/* <div class="swiper" ref={swiperContainerRef}>
-                <h2>專業 品質 效率</h2>
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/repair-1.jpg?raw=true" alt="" /></div>
-                    <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/broken-2.jpg?raw=true" alt="" /></div>
-                    <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/broken-1.jpg?raw=true" alt="" /></div>
-                    <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/repair-2.jpg?raw=true" alt="" /></div>
-                    <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/iphone-1.jpg?raw=true" alt="" /></div>
-                    <div class="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/iphone-2.jpg?raw=true" alt="" /></div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>     
-              </div> */}
+              <Swiper/>
             </div>
           </Content>
           )}
         <Footer
           style={{
             textAlign: "center",
-            // color: ""
+            padding: "15px"
           }}
         >
           <FloatButton.Group
