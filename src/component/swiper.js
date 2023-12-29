@@ -26,12 +26,12 @@ const Slider = () => {
     <div className="swiper-container">
         {/* <h2>專業 品質 效率</h2> */}
         <div className="swiper-wrapper">
-            <div className="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/repair-1.jpg?raw=true" alt="" /></div>
-            <div className="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/broken-2.jpg?raw=true" alt="" /></div>
+            <div className="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone-formal/blob/main/images/bg_01.jpg?raw=true" alt="" /></div>
+            {/* <div className="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/broken-2.jpg?raw=true" alt="" /></div>
             <div className="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/broken-1.jpg?raw=true" alt="" /></div>
             <div className="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/repair-2.jpg?raw=true" alt="" /></div>
             <div className="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/iphone-1.jpg?raw=true" alt="" /></div>
-            <div className="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/iphone-2.jpg?raw=true" alt="" /></div>
+            <div className="swiper-slide"><img src="https://github.com/yan-tingciou/goldeggphone/blob/main/images/iphone-2.jpg?raw=true" alt="" /></div> */}
         </div>
       {/* <div className="swiper-button-next"></div>
       <div className="swiper-button-prev"></div> */}
