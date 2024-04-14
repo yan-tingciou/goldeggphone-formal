@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -10,8 +10,6 @@ import Service from './pages/service';
 import About from './pages/about';
 
 import reportWebVitals from './reportWebVitals';
-
-
 
 const App = () => {
   const router = createBrowserRouter([
@@ -35,6 +33,14 @@ const App = () => {
       ]
     },
   ]);
+
+  useEffect(() => {
+    const redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect !== window.location.href) {
+      window.history.replaceState(null, null, redirect);
+    }
+  }, []);
 
   return (
     <RouterProvider router={router} />
