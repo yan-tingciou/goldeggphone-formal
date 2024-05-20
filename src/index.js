@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Link, RouterProvider, useNavigate } from 'react-router-dom';
 
 import Root from './root';
 import './index.css';
@@ -35,11 +35,13 @@ const App = () => {
   ]);
 
   useEffect(() => {
-    const redirect = sessionStorage.redirect;
-    delete sessionStorage.redirect;
-    if (redirect && redirect !== window.location.href) {
-      window.history.replaceState(null, null, redirect);
-    }
+    console.log(123);
+    // const redirect = sessionStorage.redirect;
+    // delete sessionStorage.redirect;
+    // if (redirect && redirect !== window.location.href) {
+    //   window.history.replaceState(null, null, redirect);
+    // }
+    
   }, []);
 
   return (

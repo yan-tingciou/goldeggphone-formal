@@ -7,23 +7,22 @@ import { PrimaryColor, SecondaryColor } from './MainStyle';
 import Price from './pages/price';
 import Service from './pages/service';
 import About from './pages/about';
-import Swiper from './component/swiper';
-
+import bg1 from './images/bg-1.jpg';
+import bg2 from './images/bg-2.jpg';
 import '@fortawesome/fontawesome-free/css/all.css';
 
-import { Layout, Menu, ConfigProvider, FloatButton } from "antd";
+import { Layout, Menu, ConfigProvider, FloatButton, Carousel } from "antd";
+import { MenuOutlined } from '@ant-design/icons';
 const { Header, Content, Footer } = Layout;
 
 
 const Root = () => {
-  const swiperContainerRef = useRef(null);
   const location = useLocation();
+  const [innerWidthChange, setInnerWidthChange] = useState(0);
   const [activeLink, setActiveLink] = useState(null);
   const ulStyle = {
     display: 'flex',
     fontSize: '16px',
-    // marginRight: '60px',
-    // background: '#fff',
     padding: '0px',
   };
 
@@ -32,41 +31,25 @@ const Root = () => {
   };
 
   useEffect(() => {
+    window.addEventListener('resize', () => {
+      setInnerWidthChange(window.innerWidth);
+    });
+  },[]);
+  
+  useEffect(() => {
     const pathname = location.pathname;
     console.log(pathname);
     setActiveLink({ ...activeLink, [pathname]: 'active' });
-  },[location]) 
+    window.scrollTo(0, 0);
+  },[location]);
 
+  const handleMenuOpen = () => {
+    if (window.innerWidth < 690) {
+      const menu = document.querySelector('.menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  };
   
-  // const handleLinkClick = (linkName) => {
-  //   setActiveLink(linkName);
-  // };
-  // useEffect(() => {
-  //   const swiper = new Swiper(swiperContainerRef.current, {
-  //     autoplay: {
-  //       delay: 5000,
-  //     },
-  //     effect: 'slide',
-  //     slideShadows: false,
-  //     direction: 'horizontal',
-  //     speed: 800,
-  //     loop: true,
-  //     pagination: {
-  //       el: '.swiper-pagination',
-  //     },
-  //     navigation: {
-  //       nextEl: '.swiper-button-next',
-  //       prevEl: '.swiper-button-prev',
-  //     },
-  //   });
-
-  //   return () => {
-  //     if (swiper) {
-  //       swiper.destroy(true, true);
-  //     }
-  //   };
-  // }, []);
-
   return (
   <ConfigProvider
     theme={{
@@ -77,37 +60,54 @@ const Root = () => {
         },
         FloatButton: {
           fontSizeIcon: 24,
+        },
+        Table:{
+          rowHoverBg: SecondaryColor,
+          headerBg: "#000",
+          headerColor: "#fff",
+          headerSortHoverBg: "#D0D0D0",
+          headerColor: PrimaryColor,
         }
       }
     }}
   >
     <Layout>
-        <Header
-          style={{
-            position: "sticky",
-            top: 0,
-            zIndex: 99,
-            width: "100%",
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-          }}
-        >
+        <Header className='headerStyle'>
           <div className="demo-logo">
             <h2><Link to="/"></Link></h2>
           </div>
-          <ul style={ulStyle}>
-            <li>
-              <Link to={`/service`} className={`link ${location.pathname === '/service' ? 'active' : ''}`} >服務項目</Link>
-            </li>
-            <li>
-              <Link to={`/price`} className={`link ${location.pathname === '/price' ? 'active' : ''}`} >維修價目表</Link>
-            </li>
-            <li>
-              <Link to={`/about`} className={`link ${location.pathname === '/about' ? 'active' : ''}`} >關於金機誕</Link>
-            </li>
-          </ul>
+          <a className="menu-list" ><MenuOutlined onClick={handleMenuOpen}/></a>
+          { window.innerWidth > 690 
+            ? 
+            <ul className='menu'>
+              <li>
+                <Link to={`/service`} className={`link ${location.pathname === '/service' ? 'active' : ''}`} >服務項目</Link>
+              </li>
+              <li>
+                <Link to={`/price`} className={`link ${location.pathname === '/price' ? 'active' : ''}`} >維修價目表</Link>
+              </li>
+              <li>
+                <Link to={`/about`} className={`link ${location.pathname === '/about' ? 'active' : ''}`} >關於金機誕</Link>
+              </li>
+            </ul>
+            : null
+          }
         </Header>
+          { window.innerWidth < 690 
+            ? 
+            <ul className='menu small'>
+              <li>
+                <Link to={`/service`} className={`link ${location.pathname === '/service' ? 'active' : ''}`} >服務項目</Link>
+              </li>
+              <li>
+                <Link to={`/price`} className={`link ${location.pathname === '/price' ? 'active' : ''}`} >維修價目表</Link>
+              </li>
+              <li>
+                <Link to={`/about`} className={`link ${location.pathname === '/about' ? 'active' : ''}`} >關於金機誕</Link>
+              </li>
+            </ul>
+            : null
+          }
         {location.pathname === "/price" ? 
           <Price /> 
           : location.pathname === "/service" ? 
@@ -115,29 +115,24 @@ const Root = () => {
           : location.pathname === "/about" ? 
           <About />
           :
-          (<Content
-            className="contentStyle"
-            style={{
-              padding: "0 30px",
-            }}
-          >
+          (<Content>
             <div
               style={{
-                padding: 24,
                 minHeight: 578,
                 background: '#fff',
               }}
             >
-              <Swiper/>
+              <Carousel autoplay effect="fade">
+                <div>
+                  <img src={bg1} className="bgStyle" ></img>
+                </div>
+                <div>
+                  <img src={bg2} className="bgStyle" ></img>
+                </div>
+              </Carousel>
             </div>
           </Content>
           )}
-        <Footer
-          style={{
-            textAlign: "center",
-            padding: "15px"
-          }}
-        >
           <FloatButton.Group
             shape="circle"
             style={{
@@ -175,7 +170,13 @@ const Root = () => {
               />                  
             </div>
           </FloatButton.Group>
-          Copyright © 2016-2023 金機誕 All rights reserved.
+        <Footer
+          style={{
+            textAlign: "center",
+            padding: "15px"
+          }}
+        >
+          Copyright © 2016-2024 金機誕 All rights reserved.
         </Footer>
     </Layout>
   </ConfigProvider>
