@@ -1,8 +1,7 @@
-import logoPhoto from './../images/金機誕logo.jpeg';
-import openingDaysPhoto from './../images/openingDay.jpg';
+// import logoPhoto from './../images/金機誕logo.jpeg';
+// import openingDaysPhoto from './../images/openingDay.jpg';
 import { Layout, Typography } from 'antd';
-import { SmileFilled, SmileOutlined } from '@ant-design/icons';
-const { Paragraph, Text } = Typography;
+const { Paragraph } = Typography;
 const { Content } = Layout;
 
 const About = () => {
@@ -14,7 +13,7 @@ const About = () => {
                 <li >
                     <h2>關於金機誕 About</h2>
                     <div className="aboutText">
-                        <img src={logoPhoto} className="servicePhoto" alt="" />
+                        <img src="https://github.com/yan-tingciou/goldeggphone-formal/blob/main/src/images/%E9%87%91%E6%A9%9F%E8%AA%95logo.jpeg?raw=true" className="servicePhoto" alt="" />
                         <p>
                             金機誕通訊行成立於2016，我們成立7年多來一直秉持著專業、快速、品質、效率，四大堅持，盡可能讓您的產品恢復如初，並持續不斷精進技術設備增加經驗，穩健成長，除手機平板筆電維修外，還提供全新機/中古機買賣、手機配件、客製化包膜等等的一條龍服務，<span className='fontRed'>我們也在2024年4月取得蘋果APPLE獨立維修中心的資格，除一般認證的維修零件，也能提供APPLE原廠的零件供您選擇。</span>
                         </p>
@@ -24,7 +23,7 @@ const About = () => {
                 <li>
                     <h2>營業時間 Opening Day</h2>
                     <div className="aboutText">
-                    <img src={openingDaysPhoto} className="servicePhoto" alt="" />
+                    <img src="https://github.com/yan-tingciou/goldeggphone-formal/blob/main/src/images/openingDay.jpg?raw=true" className="servicePhoto" alt="" />
                         <p className='aboutTextCenter'>
                         星期一 12:00–21:00<br/>
                         星期二 12:00–21:00<br/>

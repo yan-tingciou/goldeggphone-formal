@@ -1,10 +1,7 @@
-import { Outlet, Link, Navigate, useLocation } from "react-router-dom";
-
-import fixPhoto from './../images/service-fix.jpg';
-import buyPhoto from './../images/service-buy&sell.jpg';
-import phoneCasePhoto from './../images/service-phone case.jpg';
-import phioneCasePhoto1 from './../images/service-phone case-1.jpg';
-import phioneCasePhoto2 from './../images/service-others.jpg';
+// import fixPhoto from './../images/service-fix.jpg';
+// import buyPhoto from './../images/service-buy&sell.jpg';
+// import phoneCasePhoto from './../images/service-phone case.jpg';
+// import phioneCasePhoto1 from './../images/service-phone case-1.jpg';
 
 import { Layout } from "antd";
 const { Content } = Layout;
@@ -30,7 +27,7 @@ const Service = () => {
             <h2 >服務項目 Services</h2>
             <ul className="serviceUl">
                 <li>
-                    <img src={fixPhoto} className="servicePhoto" alt="" />
+                    <img src="https://github.com/yan-tingciou/goldeggphone-formal/blob/main/src/images/service-fix.jpg?raw=true" className="servicePhoto" alt="" />
                     <div className="serviceText">
                         <h3 style={{fontSize: "28px"}}>PROFESSIONAL MAINTENANCE</h3>
                         <h3 style={{fontSize: "20px"}}>專業維修</h3>
@@ -38,7 +35,7 @@ const Service = () => {
                     </div>
                 </li>
                 <li className="serviceLiReverse">
-                    <img src={buyPhoto} className="servicePhoto" alt="" />
+                    <img src="https://github.com/yan-tingciou/goldeggphone-formal/blob/main/src/images/service-buy&sell.jpg?raw=true" className="servicePhoto" alt="" />
                     <div className="serviceText">
                         <h3 style={{fontSize: "28px"}}>MOBILE PHONE SALE</h3>
                         <h3 style={{fontSize: "20px"}}>手機買賣</h3>
@@ -46,7 +43,7 @@ const Service = () => {
                     </div>
                 </li>
                 <li>
-                    <img src={phioneCasePhoto1} className="servicePhoto" alt="" />
+                    <img src="https://github.com/yan-tingciou/goldeggphone-formal/blob/main/src/images/service-phone%20case-1.jpg?raw=true" className="servicePhoto" alt="" />
                     <div className="serviceText">
                         <h3 style={{fontSize: "28px"}}>ACCESSORIES</h3>
                         <h3 style={{fontSize: "20px"}}>3C配件</h3>
@@ -54,7 +51,7 @@ const Service = () => {
                     </div>
                 </li>
                 <li className="serviceLiReverse">
-                    <img src={phioneCasePhoto2} className="servicePhoto" alt="" />
+                    <img src="https://github.com/yan-tingciou/goldeggphone-formal/blob/main/src/images/service-others.jpg?raw=true" className="servicePhoto" alt="" />
                     <div className="serviceText">
                         <h3 style={{fontSize: "28px"}}>OTHERS</h3>
                         <h3 style={{fontSize: "20px"}}>相關服務</h3>

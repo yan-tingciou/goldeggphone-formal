@@ -7,11 +7,11 @@ import { PrimaryColor, SecondaryColor } from './MainStyle';
 import Price from './pages/price';
 import Service from './pages/service';
 import About from './pages/about';
-import bg1 from './images/bg-1.jpg';
-import bg2 from './images/bg-2.jpg';
+// import bg1 from './images/bg-1.jpg';
+// import bg2 from './images/bg-2.jpg';
 import '@fortawesome/fontawesome-free/css/all.css';
 
-import { Layout, Menu, ConfigProvider, FloatButton, Carousel } from "antd";
+import { Layout, ConfigProvider, FloatButton, Carousel } from "antd";
 import { MenuOutlined } from '@ant-design/icons';
 const { Header, Content, Footer } = Layout;
 
@@ -34,7 +34,7 @@ const Root = () => {
     window.addEventListener('resize', () => {
       setInnerWidthChange(window.innerWidth);
     });
-  },[]);
+  },[innerWidthChange]);
   
   useEffect(() => {
     const pathname = location.pathname;
@@ -124,10 +124,10 @@ const Root = () => {
             >
               <Carousel autoplay effect="fade">
                 <div>
-                  <img src={bg1} className="bgStyle" ></img>
+                  <img src="https://github.com/yan-tingciou/goldeggphone-formal/blob/main/src/images/bg-1.jpg?raw=true" className="bgStyle" ></img>
                 </div>
                 <div>
-                  <img src={bg2} className="bgStyle" ></img>
+                  <img src="https://github.com/yan-tingciou/goldeggphone-formal/blob/main/src/images/bg-2.jpg?raw=true" className="bgStyle" ></img>
                 </div>
               </Carousel>
             </div>
