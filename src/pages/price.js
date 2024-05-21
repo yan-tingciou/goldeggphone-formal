@@ -619,7 +619,6 @@ const Price = () => {
             // sortOrder: sortedInfo.columnKey === 'backCover' ? sortedInfo.order : null,
             ellipsis: true,
             width: '110px',
-            fixed: 'right',
         },
     ];
     

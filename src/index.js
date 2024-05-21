@@ -1,53 +1,29 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, Link, RouterProvider, useNavigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Root from './root';
 import './index.css';
-import ErrorPage from './pages/error-page'
+import ErrorPage from './pages/error-page';
 import Price from './pages/price';
 import Service from './pages/service';
 import About from './pages/about';
+import News from './pages/news';
 
 import reportWebVitals from './reportWebVitals';
 
-const App = () => {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Root/>,
-      errorElement: <ErrorPage/>,
-      children: [
-        {
-          path: "/price",
-          element:  <Price />,
-        },
-        {
-          path: "/service",
-          element:  <Service />,
-        },
-        {
-          path: "/about",
-          element:  <About />,
-        },
-      ]
-    },
-  ]);
-
-  useEffect(() => {
-    console.log(123);
-    // const redirect = sessionStorage.redirect;
-    // delete sessionStorage.redirect;
-    // if (redirect && redirect !== window.location.href) {
-    //   window.history.replaceState(null, null, redirect);
-    // }
-    
-  }, []);
-
-  return (
-    <RouterProvider router={router} />
-  );
-}
+const App = () => (
+  <Router>
+    <Routes>
+      <Route path="/" element={<Root />} errorElement={<ErrorPage />}>
+        <Route path="price" element={<Price />} />
+        <Route path="service" element={<Service />} />
+        <Route path="about" element={<About />} />
+        {/* <Route path="news" element={<News />} /> */}
+      </Route>
+    </Routes>
+  </Router>
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

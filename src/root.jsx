@@ -7,8 +7,7 @@ import { PrimaryColor, SecondaryColor } from './MainStyle';
 import Price from './pages/price';
 import Service from './pages/service';
 import About from './pages/about';
-// import bg1 from './images/bg-1.jpg';
-// import bg2 from './images/bg-2.jpg';
+import News from './pages/news';
 import '@fortawesome/fontawesome-free/css/all.css';
 
 import { Layout, ConfigProvider, FloatButton, Carousel } from "antd";
@@ -40,6 +39,7 @@ const Root = () => {
     const pathname = location.pathname;
     console.log(pathname);
     setActiveLink({ ...activeLink, [pathname]: 'active' });
+
     window.scrollTo(0, 0);
   },[location]);
 
@@ -89,6 +89,9 @@ const Root = () => {
               <li>
                 <Link to={`/about`} className={`link ${location.pathname === '/about' ? 'active' : ''}`} >關於金機誕</Link>
               </li>
+              {/* <li>
+                <Link to={`/news`} className={`link ${location.pathname === '/news' ? 'active' : ''}`} >最新消息</Link>
+              </li> */}
             </ul>
             : null
           }
@@ -105,6 +108,9 @@ const Root = () => {
               <li>
                 <Link to={`/about`} className={`link ${location.pathname === '/about' ? 'active' : ''}`} >關於金機誕</Link>
               </li>
+              {/* <li>
+                <Link to={`/news`} className={`link ${location.pathname === '/news' ? 'active' : ''}`} >最新消息</Link>
+              </li> */}
             </ul>
             : null
           }
@@ -114,6 +120,8 @@ const Root = () => {
           <Service />
           : location.pathname === "/about" ? 
           <About />
+          // : location.pathname === "/news" ? 
+          // <News />
           :
           (<Content>
             <div
