@@ -22,7 +22,7 @@ ul > li{
 .link {
 	display: block;
 	color: #fff;
-  padding: 0 20px;
+  padding: 0 18px;
   margin: 0 5px;
   position: relative;
   text-decoration: none;
@@ -48,11 +48,11 @@ ul > li{
   align-items: center;
 }
 @media (max-width: 690px){
-  .headerStyle{
+  /* .headerStyle{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+  } */
   .demo-logo {
     margin: 0 auto;
   }
@@ -70,7 +70,7 @@ ul > li{
 }
 .menu-list {
   font-size: 24px;
-  display: none;
+  /* display: none; */
   color: #fff;
 }
 .menu-list:hover{
@@ -97,7 +97,7 @@ ul > li{
   }
 }
 
-.icon_fb:hover, .icon_line:hover{
+.icon_fb:hover, .icon_line:hover, .icon_call:hover{
   opacity: 60%;
 }
 
@@ -183,11 +183,11 @@ ul > li{
   justify-content: space-around;
   align-items: center;
   margin: 0 2%;
-  padding-bottom: 100px;
+  padding-bottom: 8em;
 }
 .aboutText > p {
   width: 50%;
-  margin: 0 1%;
+  margin: 0 2%;
   font-size: 18px;
 }
 
@@ -197,7 +197,7 @@ ul > li{
     flex-direction: column;
     align-items: center;
     margin: 0 2%;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
   .aboutText > p {
     width: 98%;
@@ -208,6 +208,3 @@ ul > li{
     text-align: center;
   }
 }
-/* .aboutText > p.aboutTextCenter{
-  font-size: 16px;
-} */
