@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 import { Table, Layout } from 'antd';
 const { Content } = Layout;
 
 const Price = () => {
+    const [data, setData] = useState([]);
     const [filteredInfo, setFilteredInfo] = useState({});
     const [sortedInfo, setSortedInfo] = useState({});
+
+
     const handleChange = (pagination, filters, sorter) => {
         console.log('Various parameters', pagination, filters, sorter);
         setFilteredInfo(filters);
@@ -36,7 +40,7 @@ const Price = () => {
             type: 'iPhone 15 Pro',
             glass: 7000,
             screen: 9500,
-            originalScreen: 11000,
+            originalScreen: 12000,
             certifiedBattery: 2500,
             originalBattery: 3200,
             lens: '電洽',
@@ -54,7 +58,7 @@ const Price = () => {
             type: 'iPhone 15 Plus',
             glass: 7000,
             screen: 10000,
-            originalScreen: 11000,
+            originalScreen: 12200,
             certifiedBattery: 2500,
             originalBattery: 3200,
             lens: '電洽',
@@ -72,7 +76,7 @@ const Price = () => {
             type: 'iPhone 15',
             glass: 6000,
             screen: 8000,
-            originalScreen: 10000,
+            originalScreen: 10600,
             certifiedBattery: 2500,
             originalBattery: 3200,
             lens: '電洽',
@@ -108,7 +112,7 @@ const Price = () => {
             type: 'iPhone 14 Pro',
             glass: 7000,
             screen: 10500,
-            originalScreen: 11000,
+            originalScreen: 12200,
             certifiedBattery: 2500,
             originalBattery: 3200,
             lens: '2000/2500',
@@ -126,7 +130,7 @@ const Price = () => {
             type: 'iPhone 14 Plus',
             glass: 4000,
             screen: 6000,
-            originalScreen: 11000,
+            originalScreen: 12200,
             certifiedBattery: 2000,
             originalBattery: 3200,
             lens: '2000/2500',
@@ -144,7 +148,7 @@ const Price = () => {
             type: 'iPhone 14',
             glass: 4000,
             screen: 5500,
-            originalScreen: 10000,
+            originalScreen: 10600,
             certifiedBattery: 2000,
             originalBattery: 3200,
             lens: '2000/2500',
@@ -162,7 +166,7 @@ const Price = () => {
             type: 'iPhone 13 Pro Max',
             glass: 6000,
             screen: 10000,
-            originalScreen: 11500,
+            originalScreen: 12200,
             certifiedBattery: 1800,
             originalBattery: 2800,
             lens: '2000/3000',
@@ -180,7 +184,7 @@ const Price = () => {
             type: 'iPhone 13 Pro',
             glass: 5000,
             screen: 9000,
-            originalScreen: 10000,
+            originalScreen: 10600,
             certifiedBattery: 1600,
             originalBattery: 2800,
             lens: '2000/3000',
@@ -198,7 +202,7 @@ const Price = () => {
             type: 'iPhone 13',
             glass: 3500,
             screen: '4500/副3000',
-            originalScreen: 10000,
+            originalScreen: 10600,
             certifiedBattery: 1500,
             originalBattery: 2800,
             lens: '2000/3000',
@@ -216,7 +220,7 @@ const Price = () => {
             type: 'iPhone 13 Mini',
             glass: 3000,
             screen: 4500,
-            originalScreen: 8000,
+            originalScreen: 9000,
             certifiedBattery: 1500,
             originalBattery: 2800,
             lens: '2000/2000',
@@ -234,7 +238,7 @@ const Price = () => {
             type: 'iPhone 12 Pro Max',
             glass: 3500,
             screen: '5500/副3500',
-            originalScreen: 11500,
+            originalScreen: 12000,
             certifiedBattery: 1500,
             originalBattery: 2500,
             lens: '2000/3500',
@@ -252,7 +256,7 @@ const Price = () => {
             type: 'iPhone 12 Pro',
             glass: 3000,
             screen: '4000/副2800',
-            originalScreen: 10000,
+            originalScreen: 10500,
             certifiedBattery: 1300,
             originalBattery: 2500,
             lens: '2000/3500',
@@ -270,7 +274,7 @@ const Price = () => {
             type: 'iPhone 12',
             glass: 3000,
             screen: '4000/副2800',
-            originalScreen: 10000,
+            originalScreen: 10500,
             certifiedBattery: 1300,
             originalBattery: 2500,
             lens: '2000/2000',
@@ -288,7 +292,7 @@ const Price = () => {
             type: 'iPhone 12 Mini',
             glass: 3000,
             screen: '4000/副3000',
-            originalScreen: 8000,
+            originalScreen: 9000,
             certifiedBattery: 1200,
             originalBattery: 2500,
             lens: '2000/2000',
@@ -306,7 +310,7 @@ const Price = () => {
             type: 'iPhone 11 Pro Max',
             glass: 2500,
             screen: '3800/副2800',
-            originalScreen: 11000,
+            originalScreen: 12000,
             certifiedBattery: 1300,
             originalBattery: 2500,
             lens: '2000/2500',
@@ -324,7 +328,7 @@ const Price = () => {
             type: 'iPhone 11 Pro',
             glass: 2000,
             screen: '3000/副2400',
-            originalScreen: 9500,
+            originalScreen: 10500,
             certifiedBattery: 1300,
             originalBattery: 2500,
             lens: '2000/2500',
@@ -342,7 +346,7 @@ const Price = () => {
             type: 'iPhone 11',
             glass: 2500,
             screen: '2600/副2200',
-            originalScreen: 6800,
+            originalScreen: 7500,
             certifiedBattery: 1200,
             originalBattery: 2500,
             lens: '2000/2500',
@@ -659,6 +663,15 @@ const Price = () => {
         },
     ];
     
+    useEffect(() => {
+        axios.get("https://raw.githubusercontent.com/yan-tingciou/goldeggphone-formal/main/src/iphoneData.json")
+        .then(function (response) {
+            console.log(response.data);
+            setData(response.data);
+        });
+    }, []);    
+  
+
     const iPhoneTitle = () => {
         return(<>
         <h4 style={{fontSize: '24px', fontWeight: 'bold', display: 'inline'}}>I Phone 維修價目表 </h4>
@@ -669,7 +682,7 @@ const Price = () => {
     return(<>
     <Content >
         <div className='contentStyle'>
-            <Table columns={iphoneColumns} dataSource={iphoneData} onChange={handleChange} pagination={false} size='small'
+            <Table columns={iphoneColumns} dataSource={data} onChange={handleChange} pagination={false} size='small'
                 scroll={{
                     x: 100,
                 }}
@@ -687,7 +700,6 @@ const Price = () => {
                 title={iPhoneTitle}
                 bordered
             />
-
         </div>
     </Content>
     </>)
