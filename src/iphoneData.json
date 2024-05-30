@@ -36,24 +36,6 @@
         "backCover": "4000/電洽"
     },
     {
-        "key": "2",
-        "type": "iPhone 15 Pro",
-        "glass": 7000,
-        "screen": 9500,
-        "originalScreen": 11000,
-        "certifiedBattery": 2500,
-        "originalBattery": 3200,
-        "lens": "電洽",
-        "faceID": "電洽",
-        "button": "-",
-        "handset": 1800,
-        "expansion": "電洽",
-        "volumeKey": 1800,
-        "microphone": 3000,
-        "boardTrial": 6000,
-        "backCover": "4000/電洽"
-    },
-    {
         "key": "3",
         "type": "iPhone 15 Plus",
         "glass": 7000,
