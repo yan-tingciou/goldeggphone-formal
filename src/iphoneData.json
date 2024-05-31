@@ -229,7 +229,7 @@
         "button": "-",
         "expansion": "256GB/3500 512GB/4000",
         "volumeKey": 1500,
-        "microphone": 1800,
+        "microphone": 1500,
         "boardTrial": 3500,
         "backCover": "2500/4500"
     },
@@ -247,7 +247,7 @@
         "button": "-",
         "expansion": "256GB/3500 512GB/4000",
         "volumeKey": 1500,
-        "microphone": 1800,
+        "microphone": 1500,
         "boardTrial": 3500,
         "backCover": "2500/4000"
     },
@@ -265,7 +265,7 @@
         "button": "-",
         "expansion": "256GB/3500 512GB/4000",
         "volumeKey": 1500,
-        "microphone": 1800,
+        "microphone": 1500,
         "boardTrial": 3500,
         "backCover": "2500/4000"
     },
@@ -283,7 +283,7 @@
         "button": "-",
         "expansion": "256GB/3500",
         "volumeKey": 1500,
-        "microphone": 1800,
+        "microphone": 1500,
         "boardTrial": 3500,
         "backCover": "2300/3500"
     },
@@ -301,7 +301,7 @@
         "button": "-",
         "expansion": "256GB/3500 512GB/4500",
         "volumeKey": 1200,
-        "microphone": 1800,
+        "microphone": 1500,
         "boardTrial": 3000,
         "backCover": "2000/3500"
     },
@@ -319,7 +319,7 @@
         "button": "-",
         "expansion": "256GB/3500 512GB/4500",
         "volumeKey": 1200,
-        "microphone": 1800,
+        "microphone": 1500,
         "boardTrial": 3000,
         "backCover": "2000/3000"
     },
