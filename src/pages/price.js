@@ -562,7 +562,7 @@ const Price = () => {
             sorter: (a, b) => a.originalScreen - b.originalScreen,
             sortOrder: sortedInfo.columnKey === 'originalScreen' ? sortedInfo.order : null,
             ellipsis: true,
-            width: '136px',
+            width: '138px',
             className: 'fontRed',
         },
         {
@@ -572,7 +572,7 @@ const Price = () => {
             sorter: (a, b) => a.certifiedBattery - b.certifiedBattery,
             sortOrder: sortedInfo.columnKey === 'certifiedBattery' ? sortedInfo.order : null,
             ellipsis: true,
-            width: '90px',
+            width: '92px',
         },
         {
             title: 'APPLE原廠電池',
@@ -581,7 +581,7 @@ const Price = () => {
             sorter: (a, b) => a.originalBattery - b.originalBattery,
             sortOrder: sortedInfo.columnKey === 'originalBattery' ? sortedInfo.order : null,
             ellipsis: true,
-            width: '136px',
+            width: '138px',
             className: 'fontRed',
         },
         {

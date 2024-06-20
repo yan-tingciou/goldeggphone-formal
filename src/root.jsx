@@ -203,7 +203,9 @@ const Root = () => {
             color: PrimaryColor,
           }}
         >
-          Copyright © 2016-2024 金機誕 All rights reserved.
+          Copyright © 2016-2024 金機誕 All rights reserved
+          <span style={{ marginLeft: '20px' }}>訪客人數:</span>
+          <img style={{ marginBottom: '-6px' }} src="https://counter4.optistats.ovh/private/freecounterstat.php?c=fs5muueycpssknmdu23g26ppsmxp5n3j" border="0" title="page counter" alt="page counter"/>
         </Footer>
     </Layout>
   </ConfigProvider>
