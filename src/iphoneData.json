@@ -87,7 +87,7 @@
         "volumeKey": 1800,
         "microphone": 2500,
         "boardTrial": 5000,
-        "backCover": "4000/6000"
+        "backCover": "4000/5000"
     },
     {
         "key": "6",
@@ -97,7 +97,7 @@
         "originalScreen": 12200,
         "certifiedBattery": 2500,
         "originalBattery": 3200,
-        "lens": "2000/2500",
+        "lens": "2000/3000",
         "faceID": 3500,
         "handset": 1800,
         "button": "-",
@@ -123,7 +123,7 @@
         "volumeKey": 1800,
         "microphone": 2000,
         "boardTrial": 4500,
-        "backCover": "2500/6000"
+        "backCover": "3500/5000"
     },
     {
         "key": "8",
@@ -141,7 +141,7 @@
         "volumeKey": 1800,
         "microphone": 2000,
         "boardTrial": 4500,
-        "backCover": "2000/5000"
+        "backCover": "3000/4500"
     },
     {
         "key": "9",
@@ -177,7 +177,7 @@
         "volumeKey": 1500,
         "microphone": 1800,
         "boardTrial": 4000,
-        "backCover": "3000/4500"
+        "backCover": "3000/4000"
     },
     {
         "key": "11",
@@ -187,7 +187,7 @@
         "originalScreen": 10600,
         "certifiedBattery": 1500,
         "originalBattery": 2800,
-        "lens": "2000/3000",
+        "lens": "2000/2000",
         "faceID": 2500,
         "handset": 1500,
         "button": "-",
@@ -195,7 +195,7 @@
         "volumeKey": 1500,
         "microphone": 1800,
         "boardTrial": 4000,
-        "backCover": "3000/4500"
+        "backCover": "3000/4000"
     },
     {
         "key": "12",
@@ -213,7 +213,7 @@
         "volumeKey": 1500,
         "microphone": 1800,
         "boardTrial": 4000,
-        "backCover": "2500/4000"
+        "backCover": "3000/4000"
     },
     {
         "key": "13",
@@ -223,7 +223,7 @@
         "originalScreen": 12200,
         "certifiedBattery": 1500,
         "originalBattery": 2500,
-        "lens": "2000/3500",
+        "lens": "2000/3000",
         "faceID": 2500,
         "handset": 1500,
         "button": "-",
@@ -231,7 +231,7 @@
         "volumeKey": 1500,
         "microphone": 1500,
         "boardTrial": 3500,
-        "backCover": "2500/4500"
+        "backCover": "2500/4000"
     },
     {
         "key": "14",
@@ -241,7 +241,7 @@
         "originalScreen": 10500,
         "certifiedBattery": 1300,
         "originalBattery": 2500,
-        "lens": "2000/3500",
+        "lens": "2000/3000",
         "faceID": 2500,
         "handset": 1500,
         "button": "-",
@@ -249,7 +249,7 @@
         "volumeKey": 1500,
         "microphone": 1500,
         "boardTrial": 3500,
-        "backCover": "2500/4000"
+        "backCover": "2500/3500"
     },
     {
         "key": "15",
@@ -267,7 +267,7 @@
         "volumeKey": 1500,
         "microphone": 1500,
         "boardTrial": 3500,
-        "backCover": "2500/4000"
+        "backCover": "2500/3500"
     },
     {
         "key": "16",
@@ -285,7 +285,7 @@
         "volumeKey": 1500,
         "microphone": 1500,
         "boardTrial": 3500,
-        "backCover": "2300/3500"
+        "backCover": "2500/3000"
     },
     {
         "key": "17",
@@ -331,7 +331,7 @@
         "originalScreen": 7500,
         "certifiedBattery": 1200,
         "originalBattery": 2500,
-        "lens": "2000/2500",
+        "lens": "2000/2000",
         "faceID": 2500,
         "handset": 1200,
         "button": "-",
