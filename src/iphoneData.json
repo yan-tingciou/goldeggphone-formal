@@ -15,7 +15,7 @@
         "volumeKey": 1800,
         "microphone": 3000,
         "boardTrial": 6000,
-        "backCover": "4000/電洽"
+        "backCover": "2500/6000"
     },
     {
         "key": "2",
@@ -33,7 +33,7 @@
         "volumeKey": 1800,
         "microphone": 3000,
         "boardTrial": 6000,
-        "backCover": "4000/電洽"
+        "backCover": "2500/6000"
     },
     {
         "key": "3",
@@ -51,7 +51,7 @@
         "volumeKey": 1800,
         "microphone": 3000,
         "boardTrial": 5500,
-        "backCover": "3500/電洽"
+        "backCover": "2500/5500"
     },
     {
         "key": "4",
@@ -69,7 +69,7 @@
         "volumeKey": 1800,
         "microphone": 3000,
         "boardTrial": 5500,
-        "backCover": "3500/電洽"
+        "backCover": "2500/5500"
     },
     {
         "key": "5",
@@ -123,7 +123,7 @@
         "volumeKey": 1800,
         "microphone": 2000,
         "boardTrial": 4500,
-        "backCover": "3500/5000"
+        "backCover": "2500/5000"
     },
     {
         "key": "8",
@@ -141,7 +141,7 @@
         "volumeKey": 1800,
         "microphone": 2000,
         "boardTrial": 4500,
-        "backCover": "3000/4500"
+        "backCover": "2500/4500"
     },
     {
         "key": "9",
@@ -439,7 +439,7 @@
         "originalScreen": "-",
         "certifiedBattery": 800,
         "originalBattery": "-",
-        "lens": "1500/1000",
+        "lens": "1000/1500",
         "faceID": "-",
         "button": "800/保指紋2000",
         "handset": 1000,
@@ -457,7 +457,7 @@
         "originalScreen": "-",
         "certifiedBattery": 800,
         "originalBattery": "-",
-        "lens": "1200/1200",
+        "lens": "1000/1200",
         "faceID": "-",
         "button": "800/保指紋2000",
         "handset": 1000,
