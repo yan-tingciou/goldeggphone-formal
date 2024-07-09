@@ -146,8 +146,8 @@ const Root = () => {
           <FloatButton.Group
             shape="circle"
             style={{
-              right: 50,
-              bottom: 70,
+              right: 40,
+              bottom: 50,
             }}
           >
             <div className="icon_fb">
@@ -204,6 +204,7 @@ const Root = () => {
           }}
         >
           Copyright © 2016-2024 金機誕 All rights reserved
+          { (window.innerWidth < 690) ? <br /> : null }
           <span style={{ marginLeft: '20px' }}>訪客人數:</span>
           <img style={{ marginBottom: '-6px' }} src="https://counter4.optistats.ovh/private/freecounterstat.php?c=fs5muueycpssknmdu23g26ppsmxp5n3j" border="0" title="page counter" alt="page counter"/>
         </Footer>

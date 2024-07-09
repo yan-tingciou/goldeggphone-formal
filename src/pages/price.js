@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 
-import { Table, Layout } from 'antd';
+import { Table, Layout, Spin } from 'antd';
+import LoadingPrompt from '../component/loading';
 const { Content } = Layout;
 
 const Price = () => {
     const [data, setData] = useState([]);
     const [filteredInfo, setFilteredInfo] = useState({});
     const [sortedInfo, setSortedInfo] = useState({});
+    const [isLoading, setIsLoading] = useState(true);  //控制是否還在載入中
+    const [loadingTimeout, setLoadingTimeout] = useState(false);  //控制10秒後若還在載入中，則顯示錯誤訊息
+    const [errorNotificationDisplayed, setErrorNotificationDisplayed] = useState(false);  //控制是否已經顯示錯誤訊息
 
+    const location = useLocation();
 
     const handleChange = (pagination, filters, sorter) => {
-        console.log('Various parameters', pagination, filters, sorter);
         setFilteredInfo(filters);
         setSortedInfo(sorter);
     };
@@ -668,8 +673,26 @@ const Price = () => {
         .then(function (response) {
             console.log(response.data);
             setData(response.data);
+            setIsLoading(false);
+        })
+        .catch(function (error) {
+            console.log(error, 123);
+            setErrorNotificationDisplayed(true);
         });
-    }, []);    
+        
+        const timeoutId = setTimeout(() => {
+            setLoadingTimeout(true);
+            setIsLoading(false);
+            if (!errorNotificationDisplayed && data === null) {
+                setErrorNotificationDisplayed(true);
+            }
+        }, 10000);
+
+        return () => {
+            clearTimeout(timeoutId);
+        };
+
+    }, [location.pathname, errorNotificationDisplayed]);
   
 
     const iPhoneTitle = () => {
@@ -682,7 +705,9 @@ const Price = () => {
     return(<>
     <Content >
         <div className='contentStyle'>
-            <Table columns={iphoneColumns} dataSource={data} onChange={handleChange} pagination={false} size='small'
+        { isLoading && !loadingTimeout 
+            ? <LoadingPrompt /> 
+            : <Table columns={iphoneColumns} dataSource={data} onChange={handleChange} pagination={false} size='small'
                 scroll={{
                     x: 100,
                 }}
@@ -700,6 +725,7 @@ const Price = () => {
                 title={iPhoneTitle}
                 bordered
             />
+        }
         </div>
     </Content>
     </>)

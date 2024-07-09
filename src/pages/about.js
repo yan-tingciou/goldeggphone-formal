@@ -13,7 +13,7 @@ const About = () => {
                     <div className="aboutText">
                         <img src="https://github.com/yan-tingciou/goldeggphone-formal/blob/main/src/images/%E9%87%91%E6%A9%9F%E8%AA%95logo.jpeg?raw=true" className="servicePhoto" alt="" />
                         <p>
-                            金機誕通訊行成立於2016，我們成立7年多來一直秉持著專業、效率、品質、誠信，四大堅持，盡可能讓您的產品恢復如初，並持續不斷精進技術設備增加經驗，穩健成長，除手機平板筆電維修外，還提供門號申辦、全新機/中古機買賣、手機配件、客製化包膜等等的一條龍服務，<span className='fontRed'>我們也在2024年4月取得蘋果APPLE獨立維修中心的資格，除一般認證的維修零件，也能提供APPLE原廠的零件供您選擇。</span>
+                            金機誕手機維修成立於2016，我們成立多年來一直秉持著專業、效率、品質、誠信，四大堅持，盡可能讓您的產品恢復如初，並持續不斷精進技術設備增加經驗，穩健成長，除手機平板筆電維修外，還提供門號申辦、全新機/中古機買賣、手機配件、客製化包膜等等的一條龍服務，<span className='fontRed'>我們也在2024年4月取得蘋果APPLE獨立維修中心的資格，除一般認證的維修零件，也能提供APPLE原廠的零件供您選擇。</span>
                         </p>
                     </div>
                 </li>
