@@ -29,7 +29,7 @@ const About = () => {
                             星期五 12:00–21:00<br/>
                             <span className='fontRed'> 星期六 12:00–18:30</span><br/>
                             星期日 公休<br/>
-                            (不定期公休，請依臉書官網公告為主)
+                            (不定期公休，請依最新的Google搜尋顯示為主)
                         </p>
                         {/* <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgoldeggphone&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" style={{border: 'none', overflow: 'hidden', width: '340px', height: '331px'}} 
                             frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
