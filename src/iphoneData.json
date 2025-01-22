@@ -1,10 +1,82 @@
 [
     {
         "key": "1",
+        "type": "iPhone 16 Pro Max",
+        "glass": "",
+        "screen": "",
+        "originalScreen": 13800,
+        "certifiedBattery": "",
+        "originalBattery": "",
+        "lens": "",
+        "faceID": "",
+        "button": "",
+        "handset": "",
+        "expansion": "",
+        "volumeKey": "",
+        "microphone": "",
+        "boardTrial": "",
+        "backCover": ""
+    },
+    {
+        "key": "2",
+        "type": "iPhone 16 Pro",
+        "glass": "",
+        "screen": "",
+        "originalScreen": 12200,
+        "certifiedBattery": "",
+        "originalBattery": "",
+        "lens": "",
+        "faceID": "",
+        "button": "",
+        "handset": "",
+        "expansion": "",
+        "volumeKey": "",
+        "microphone": "",
+        "boardTrial": "",
+        "backCover": ""
+    },
+    {
+        "key": "3",
+        "type": "iPhone 16 Plus",
+        "glass": "",
+        "screen": "",
+        "originalScreen": 12200,
+        "certifiedBattery": "",
+        "originalBattery": "",
+        "lens": "",
+        "faceID": "",
+        "button": "",
+        "handset": "",
+        "expansion": "",
+        "volumeKey": "",
+        "microphone": "",
+        "boardTrial": "",
+        "backCover": ""
+    },
+    {
+        "key": "4",
+        "type": "iPhone 16",
+        "glass": "",
+        "screen": "",
+        "originalScreen": 10600,
+        "certifiedBattery": "",
+        "originalBattery": "",
+        "lens": "",
+        "faceID": "",
+        "button": "",
+        "handset": "",
+        "expansion": "",
+        "volumeKey": "",
+        "microphone": "",
+        "boardTrial": "",
+        "backCover": ""
+    },
+    {
+        "key": "5",
         "type": "iPhone 15 Pro Max",
         "glass": 8000,
         "screen": 12000,
-        "originalScreen": 13500,
+        "originalScreen": 13800,
         "certifiedBattery": 2100,
         "originalBattery": 3000,
         "lens": "電洽",
@@ -18,7 +90,7 @@
         "backCover": "2500/6000"
     },
     {
-        "key": "2",
+        "key": "6",
         "type": "iPhone 15 Pro",
         "glass": 7000,
         "screen": 9500,
@@ -36,7 +108,7 @@
         "backCover": "2500/6000"
     },
     {
-        "key": "3",
+        "key": "7",
         "type": "iPhone 15 Plus",
         "glass": 7000,
         "screen": 7900,
@@ -54,10 +126,10 @@
         "backCover": "2500/5500"
     },
     {
-        "key": "4",
+        "key": "8",
         "type": "iPhone 15",
         "glass": 6000,
-        "screen": 7900,
+        "screen": 7000,
         "originalScreen": 10600,
         "certifiedBattery": 2000,
         "originalBattery": 3000,
@@ -72,7 +144,7 @@
         "backCover": "2500/5500"
     },
     {
-        "key": "5",
+        "key": "9",
         "type": "iPhone 14 Pro Max",
         "glass": 7000,
         "screen": 11000,
@@ -90,10 +162,10 @@
         "backCover": "4000/5000"
     },
     {
-        "key": "6",
+        "key": "10",
         "type": "iPhone 14 Pro",
         "glass": 7000,
-        "screen": 9500,
+        "screen": 9000,
         "originalScreen": 12200,
         "certifiedBattery": 1600,
         "originalBattery": 3000,
@@ -108,7 +180,7 @@
         "backCover": "3500/5000"
     },
     {
-        "key": "7",
+        "key": "11",
         "type": "iPhone 14 Plus",
         "glass": 4000,
         "screen": 5500,
@@ -126,7 +198,7 @@
         "backCover": "2500/5000"
     },
     {
-        "key": "8",
+        "key": "12",
         "type": "iPhone 14",
         "glass": 4000,
         "screen": 5000,
@@ -144,10 +216,10 @@
         "backCover": "2500/4500"
     },
     {
-        "key": "9",
+        "key": "13",
         "type": "iPhone 13 Pro Max",
         "glass": 6000,
-        "screen": 8500,
+        "screen": 8000,
         "originalScreen": 12200,
         "certifiedBattery": 1600,
         "originalBattery": 2800,
@@ -162,10 +234,10 @@
         "backCover": "3500/5000"
     },
     {
-        "key": "10",
+        "key": "14",
         "type": "iPhone 13 Pro",
         "glass": 5000,
-        "screen": 8000,
+        "screen": 7500,
         "originalScreen": 10600,
         "certifiedBattery": 1500,
         "originalBattery": 2800,
@@ -180,7 +252,7 @@
         "backCover": "3000/4000"
     },
     {
-        "key": "11",
+        "key": "15",
         "type": "iPhone 13",
         "glass": 3500,
         "screen": "4500/副3000",
@@ -198,7 +270,7 @@
         "backCover": "3000/4000"
     },
     {
-        "key": "12",
+        "key": "16",
         "type": "iPhone 13 Mini",
         "glass": 3000,
         "screen": 4500,
@@ -216,7 +288,7 @@
         "backCover": "3000/4000"
     },
     {
-        "key": "13",
+        "key": "17",
         "type": "iPhone 12 Pro Max",
         "glass": 3500,
         "screen": "5500/副3500",
@@ -234,7 +306,7 @@
         "backCover": "2500/4000"
     },
     {
-        "key": "14",
+        "key": "18",
         "type": "iPhone 12 Pro",
         "glass": 3000,
         "screen": "4000/副2800",
@@ -252,7 +324,7 @@
         "backCover": "2500/3500"
     },
     {
-        "key": "15",
+        "key": "19",
         "type": "iPhone 12",
         "glass": 3000,
         "screen": "4000/副2800",
@@ -270,7 +342,7 @@
         "backCover": "2500/3500"
     },
     {
-        "key": "16",
+        "key": "20",
         "type": "iPhone 12 Mini",
         "glass": 3000,
         "screen": "4000/副3000",
@@ -288,7 +360,7 @@
         "backCover": "2500/3000"
     },
     {
-        "key": "17",
+        "key": "21",
         "type": "iPhone 11 Pro Max",
         "glass": 2500,
         "screen": "3500/副2500",
@@ -306,7 +378,7 @@
         "backCover": "2000/3500"
     },
     {
-        "key": "18",
+        "key": "22",
         "type": "iPhone 11 Pro",
         "glass": 2000,
         "screen": "3000/副2400",
@@ -324,7 +396,7 @@
         "backCover": "2000/3000"
     },
     {
-        "key": "19",
+        "key": "23",
         "type": "iPhone 11",
         "glass": 2500,
         "screen": "2600/副2200",
@@ -335,17 +407,17 @@
         "faceID": 2500,
         "handset": 1200,
         "button": "-",
-        "expansion": "256GB/3500 512GB/4500",
+        "expansion": "256GB/3500",
         "volumeKey": 1200,
         "microphone": 1200,
         "boardTrial": 3000,
         "backCover": "2000/3000"
     },
     {
-        "key": "20",
+        "key": "24",
         "type": "iPhone XS Max",
         "glass": 2300,
-        "screen": "3500/副2500",
+        "screen": "3000/副2500",
         "originalScreen": "-",
         "certifiedBattery": 1200,
         "originalBattery": 2500,
@@ -360,7 +432,7 @@
         "backCover": "2000/3000"
     },
     {
-        "key": "21",
+        "key": "25",
         "type": "iPhone XS",
         "glass": 2200,
         "screen": "2500/副2000",
@@ -378,7 +450,7 @@
         "backCover": "2000/3000"
     },
     {
-        "key": "22",
+        "key": "26",
         "type": "iPhone XR",
         "glass": 2000,
         "screen": "2500/副2000",
@@ -396,7 +468,7 @@
         "backCover": "2000/3000"
     },
     {
-        "key": "23",
+        "key": "27",
         "type": "iPhone X",
         "glass": 2000,
         "screen": "2500/副2000",
@@ -414,7 +486,7 @@
         "backCover": "2000/3000"
     },
     {
-        "key": "24",
+        "key": "28",
         "type": "iPhone SE3 SE2",
         "glass": "-",
         "screen": 1800,
@@ -432,7 +504,7 @@
         "backCover": "2000/2500"
     },
     {
-        "key": "25",
+        "key": "29",
         "type": "iPhone 8 Plus",
         "glass": "-",
         "screen": 1800,
@@ -450,7 +522,7 @@
         "backCover": "2500"
     },
     {
-        "key": "26",
+        "key": "30",
         "type": "iPhone 8",
         "glass": "-",
         "screen": 1800,
@@ -468,7 +540,7 @@
         "backCover": "2500"
     },
     {
-        "key": "27",
+        "key": "31",
         "type": "iPhone 7 Plus",
         "glass": "-",
         "screen": 1800,
@@ -486,7 +558,7 @@
         "backCover": "2500"
     },
     {
-        "key": "28",
+        "key": "32",
         "type": "iPhone 7",
         "glass": "-",
         "screen": 1800,
