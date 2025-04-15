@@ -52,7 +52,7 @@ const Price = () => {
     //   sorter: (a, b) => a.screen - b.screen,
     //   sortOrder: sortedInfo.columnKey === "screen" ? sortedInfo.order : null,
       ellipsis: true,
-      width: "100px",
+      width: "120px",
     },
     {
       title: "APPLE原廠螢幕",
