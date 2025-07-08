@@ -65,7 +65,7 @@ const Root = () => {
         Table:{
           rowHoverBg: SecondaryColor,
           headerBg: "#D0D0D0",
-          headerColor: "",
+          // headerColor: "",
           headerSortHoverBg: PrimaryColor,
           headerSortActiveBg: PrimaryColor,
           bodySortBg: PrimaryColor,
