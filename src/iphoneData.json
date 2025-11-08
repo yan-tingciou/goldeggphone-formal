@@ -78,7 +78,7 @@
         "screen": 3700,
         "originalScreen": 8000,
         "certifiedBattery": "",
-        "originalBattery": "",
+        "originalBattery": 3200,
         "lens": "",
         "faceID": "",
         "button": "-",
