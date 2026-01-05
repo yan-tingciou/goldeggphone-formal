@@ -132,6 +132,9 @@ const Root = () => {
                 background: '#fff',
               }}
             >
+              <h1 className="seo-h1">
+                金機誕手機維修-Apple 獨立維修中心
+              </h1>
               <Carousel autoplay effect="fade">
                 <div>
                   <img src="https://github.com/yan-tingciou/goldeggphone-formal/blob/main/src/images/bg-1.jpg?raw=true" className="bgStyle" ></img>
