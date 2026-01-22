@@ -39,7 +39,7 @@ const Service = () => {
                                 <h3 style={{ fontSize: "28px" }}>
                                     PROFESSIONAL MAINTENANCE
                                 </h3>
-                                <h3 style={{ fontSize: "20px" }}>專業維修</h3>
+                                <h3 style={{ fontSize: "20px" }}>手機平板各廠牌維修</h3>
                                 <p>
                                     手機現場快速維修、主機板維修、電池更換、充電故障、耗電異常、電池膨脹、螢幕異常、螢幕破裂、開機問題、泡水受潮、背板破裂、鏡頭損壞/故障
                                 </p>
@@ -70,7 +70,7 @@ const Service = () => {
                                     ACCESSORIES
                                 </h3>
                                 <h3 style={{ fontSize: "20px" }}>3C配件</h3>
-                                <p>手機防摔殼、保護貼、鏡頭保護貼、行動電源</p>
+                                <p>手機防摔殼、保護貼、鏡頭保護貼、行動電源、充電頭、充電線</p>
                             </div>
                         </li>
                         <li className="serviceLiReverse">
@@ -83,7 +83,7 @@ const Service = () => {
                                 <h3 style={{ fontSize: "28px" }}>OTHERS</h3>
                                 <h3 style={{ fontSize: "20px" }}>相關服務</h3>
                                 <p>
-                                    申辦門號/續約、手機解鎖、系統升級、資料救援
+                                    門號申辦、續約攜碼
                                 </p>
                             </div>
                         </li>
