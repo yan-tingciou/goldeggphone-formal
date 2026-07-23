@@ -1,21 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
-import axios from "axios";
+import React, { useState } from "react";
 
-import { Table, Layout, Tooltip } from "antd";
-import LoadingPrompt from "../component/loading";
+import { Table, Layout } from "antd";
+import iphoneData from "../iphoneData.json";
 const { Content } = Layout;
 
 const Price = () => {
-    const [data, setData] = useState([]);
+    const data = iphoneData;
     const [filteredInfo, setFilteredInfo] = useState({});
     const [sortedInfo, setSortedInfo] = useState({});
-    const [isLoading, setIsLoading] = useState(true); //控制是否還在載入中
-    const [loadingTimeout, setLoadingTimeout] = useState(false); //控制10秒後若還在載入中，則顯示錯誤訊息
-    const [errorNotificationDisplayed, setErrorNotificationDisplayed] =
-        useState(false); //控制是否已經顯示錯誤訊息
-
-    const location = useLocation();
 
     const handleChange = (pagination, filters, sorter) => {
         setFilteredInfo(filters);
@@ -165,32 +157,6 @@ const Price = () => {
         },
     ];
 
-    useEffect(() => {
-        axios
-            .get(
-                "https://raw.githubusercontent.com/yan-tingciou/goldeggphone-formal/main/src/iphoneData.json"
-            )
-            .then(function (response) {
-                setData(response.data);
-                setIsLoading(false);
-            })
-            .catch(function (error) {
-                setErrorNotificationDisplayed(true);
-            });
-
-        const timeoutId = setTimeout(() => {
-            setLoadingTimeout(true);
-            setIsLoading(false);
-            if (!errorNotificationDisplayed && data === null) {
-                setErrorNotificationDisplayed(true);
-            }
-        }, 10000);
-
-        return () => {
-            clearTimeout(timeoutId);
-        };
-    }, [location.pathname, errorNotificationDisplayed]);
-
     const iPhoneTitle = () => {
         return (
             <>
@@ -212,40 +178,36 @@ const Price = () => {
         <>
             <Content>
                 <div className="contentStyle">
-                  <h1 className="seo-h1">
+                    <h1 className="seo-h1">
                         手機維修價目表
                     </h1>
-                    {isLoading && !loadingTimeout ? (
-                        <LoadingPrompt />
-                    ) : (
-                        <Table
-                            columns={iphoneColumns}
-                            dataSource={data}
-                            onChange={handleChange}
-                            pagination={false}
-                            size="small"
-                            scroll={{
-                                x: 100,
-                            }}
-                            summary={() => (
-                                <Table.Summary>
-                                    <Table.Summary.Row>
-                                        <Table.Summary.Cell
-                                            index={0}
-                                            colSpan={1}
-                                        ></Table.Summary.Cell>
-                                        <Table.Summary.Cell
-                                            index={1}
-                                            colSpan={10}
-                                        ></Table.Summary.Cell>
-                                    </Table.Summary.Row>
-                                </Table.Summary>
-                            )}
-                            style={{ margin: "0 20px" }}
-                            title={iPhoneTitle}
-                            bordered
-                        />
-                    )}
+                    <Table
+                        columns={iphoneColumns}
+                        dataSource={data}
+                        onChange={handleChange}
+                        pagination={false}
+                        size="small"
+                        scroll={{
+                            x: 100,
+                        }}
+                        summary={() => (
+                            <Table.Summary>
+                                <Table.Summary.Row>
+                                    <Table.Summary.Cell
+                                        index={0}
+                                        colSpan={1}
+                                    ></Table.Summary.Cell>
+                                    <Table.Summary.Cell
+                                        index={1}
+                                        colSpan={10}
+                                    ></Table.Summary.Cell>
+                                </Table.Summary.Row>
+                            </Table.Summary>
+                        )}
+                        style={{ margin: "0 20px" }}
+                        title={iPhoneTitle}
+                        bordered
+                    />
                 </div>
             </Content>
         </>
