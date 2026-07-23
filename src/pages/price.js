@@ -97,23 +97,15 @@ const Price = () => {
             width: "100px",
         },
         {
-            title: "Face ID",
+            title: "Face ID/HOME鍵",
             dataIndex: "faceID",
             key: "faceID",
-            sorter: (a, b) => a.faceID - b.faceID,
-            sortOrder:
-                sortedInfo.columnKey === "faceID" ? sortedInfo.order : null,
             ellipsis: true,
-            width: "100px",
-        },
-        {
-            title: "HOME鍵",
-            dataIndex: "button",
-            key: "button",
-            // sorter: (a, b) => a.button - b.button,
-            // sortOrder: sortedInfo.columnKey === 'button' ? sortedInfo.order : null,
-            ellipsis: true,
-            width: "130px",
+            width: "140px",
+            render: (_, record) =>
+                record.faceID && record.faceID !== "-"
+                    ? record.faceID
+                    : record.button || record.faceID,
         },
         {
             title: "聽筒/震動/響鈴",
@@ -163,13 +155,13 @@ const Price = () => {
             width: "154px",
         },
         {
-            title: "背蓋/後殼總成",
+            title: "後蓋背板/後殼中框",
             dataIndex: "backCover",
             key: "backCover",
             // sorter: (a, b) => a.backCover - b.backCover,
             // sortOrder: sortedInfo.columnKey === 'backCover' ? sortedInfo.order : null,
             ellipsis: true,
-            width: "110px",
+            width: "170px",
         },
     ];
 
